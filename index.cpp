@@ -12,23 +12,18 @@ int calculator(int a, string op, int b)
   if (op == "^" || op == "**") {
     result = a ^ b;
     // else if multiplication
-  }
-  else if (op == "*" || op == "x") {
+  } else if (op == "*" || op == "x") {
     result = a * b;
     // else if division
-  }
-  else if (op == "/") {
+  } else if (op == "/") {
     result = a / b;
     // else if addition
-  }
-  else if (op == "+") {
+  } else if (op == "+") {
     result = a + b;
     // else if subtraction
-  }
-  else if (op == "-") {
+  } else if (op == "-") {
     result = a - b;
-  }
-  else {
+  } else {
     throw std::runtime_error("Invalid input");
   }
   return result;
@@ -56,8 +51,7 @@ int main()
     result = calculator(operand1, operator1, operand2);
 
     std::cout << operand1 << " " << operator1 << " " << operand2 << " = " << result << std::endl;
-  }
-  catch (const std::runtime_error &error) {
+  } catch (const std::runtime_error &error) {
     std::cerr << "Error: " << error.what() << std::endl;
   }
 
