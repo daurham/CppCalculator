@@ -1,4 +1,4 @@
-// This program is a simple C++ calculator that selects user input and
+// This program is a simple C++ calculator that takes user input and
 //  logs the response.
 #include <iostream>
 
